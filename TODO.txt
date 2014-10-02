@@ -1,0 +1,117 @@
+******************* PROLOG ******************* 
+ANDRZEJ MAZURKIEWICZ
+andrzejmazurkiewicz0
+
+**** to run prolog ****
+$ swipl -s file.name 
+
+**** to edit the file ****
+edit.
+
+**** call procedure ****
+fun_name.
+
+**** DEBUG MODE ****
+tspy(fun_name)
+
+
+************************************************
+facts, rules, and queries
+
+collection of facts and rules is knowledge base (database)
+
+************************************************
+Knowledge base:
+{
+   happy(yolanda).
+   listens2Music(mia).
+   listens2Music(yolanda):-  happy(yolanda).
+   playsAirGuitar(mia):-  listens2Music(mia).
+   playsAirGuitar(yolanda):-  listens2Music(yolanda). 
+}	
+Explanations:
+
+fact:
+	happy(yolanda).
+
+rule:
+	listens2Music(yolanda) :- happy(yolanda).
+	head :- body (head if body)
+	
+predicated:
+	listens2Music
+	happy
+	playsAirGuitar 
+
+Modus ponens
+{ 
+	If today is Tuesday, then John will go to work.
+	Today is Tuesday.
+	Therefore, John will go to work.  
+}
+
+happy(yolanda) is a fact
+Thus by quering "listens2Music(yolanda)."
+Prolog can deduce that it is infact true.
+ 
+************************************************
+Knowledge base
+{
+	happy(vincent).
+	listens2Music(butch).
+	playsAirGuitar(vincent):-
+		 listens2Music(vincent),
+		 happy(vincent).
+	playsAirGuitar(butch):-
+		 happy(butch).
+	playsAirGuitar(butch):-
+		 listens2Music(butch). 
+}
+
+Explanations:
+
+1) AND
+playsAirGuitar(vincent):-
+	 listens2Music(vincent),
+	 happy(vincent).
+comma " , " is a logical conjuction AND
+
+2) OR
+
+2.1)
+	playsAirGuitar(butch):-
+		 happy(butch).
+	playsAirGuitar(butch):-
+		 listens2Music(butch). 
+
+2.2)
+	playsAirGuitar(butch):-
+		 happy(butch);
+		 listens2Music(butch). 
+defining several rules is a way of stating a logical disjunction OR
+
+************************************************
+Knowledge base
+{
+   woman(mia).
+   woman(jody).
+   woman(yolanda).
+   
+   loves(vincent,mia).
+   loves(marsellus,mia).
+   loves(pumpkin,honey_bunny).
+   loves(honey_bunny,pumpkin).
+}
+
+1) Variables
+	Query:
+		?- woman(X)
+		?- X=mia;X=jody;X=yolanda
+		
+		?- loves(marsellus,X),woman(X)
+			// is there somebody who loves marsellus and
+			// is also a woman
+		?- X=mia
+   
+	
+
