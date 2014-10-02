@@ -112,6 +112,7 @@ Knowledge base
 			// is there somebody who loves marsellus and
 			// is also a woman
 		?- X=mia
-   
-	
+
+******************************************************   
+http://www.learnprolognow.org/lpnpage.php?pagetype=html&pageid=lpn-htmlse2
 
