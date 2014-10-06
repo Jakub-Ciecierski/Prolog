@@ -115,7 +115,9 @@ Knowledge base
 
 ******************************************************
 Terms are built of atmos, numbers, variables and complex terms:
-Atoms
-******************************************************
 http://www.learnprolognow.org/lpnpage.php?pagetype=html&pageid=lpn-htmlse2
+******************************************************
 
+
+
+http://www.learnprolognow.org/lpnpage.php?pagetype=html&pageid=lpn-htmlse5
