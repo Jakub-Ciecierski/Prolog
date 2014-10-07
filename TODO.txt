@@ -1,6 +1,6 @@
 ******************* PROLOG ******************* 
 ANDRZEJ MAZURKIEWICZ
-andrzejmazurkiewicz0
+skype: andrzejmazurkiewicz0
 
 **** to run prolog ****
 $ swipl -s file.name 
