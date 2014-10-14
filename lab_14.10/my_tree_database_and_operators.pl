@@ -27,3 +27,9 @@ i is_parent_of p.
 
 
 is_root(X) :- X is_parent_of _, not(_ is_parent_of X),!.
+
+:- op(500,xfx,'is_sibbling_of').
+
+X is_sibbling_of Y :- Z is_parent_of X, Z is_parent_of Y.
+
+are_cool(X,Y) :- X is_sibbling_of Y.
