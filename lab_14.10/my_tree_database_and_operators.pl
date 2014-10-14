@@ -30,6 +30,14 @@ is_root(X) :- X is_parent_of _, not(_ is_parent_of X),!.
 
 :- op(500,xfx,'is_sibbling_of').
 
-X is_sibbling_of Y :- Z is_parent_of X, Z is_parent_of Y.
+is_sibbling_of(X,Y) :- Z is_parent_of X, Z is_parent_of Y.
 
-are_cool(X,Y) :- X is_sibbling_of Y.
+:- op(500,xfx,'is_on_same_level').
+
+a is_on_same_level a.
+
+is_on_same_level(X,Y) :- X is_sibbling_of Y.
+
+is_on_same_level(X,Y) :- X1 is_parent_of X, Y1 is_parent_of Y,
+							is_on_same_level(X1,Y1).
+
