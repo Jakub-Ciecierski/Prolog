@@ -1,3 +1,10 @@
+
+
+Useful tools for project:
+
+tuprolog  java + prolog
+knowrob
+
 ******************* PROLOG ******************* 
 ANDRZEJ MAZURKIEWICZ
 skype: andrzejmazurkiewicz0
