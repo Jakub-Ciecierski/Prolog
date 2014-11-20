@@ -1,6 +1,7 @@
+Useful tools for project:
 
-http://www.amzi.com/AdventureInProlog/aprolog.php
-******************* PROLOG ******************* 
+tuprolog  java + prolog
+knowrobhttp://www.amzi.com/AdventureInProlog/aprolog.php******************* PROLOG ******************* 
 ANDRZEJ MAZURKIEWICZ
 skype: andrzejmazurkiewicz0
 www.mazurkiewicz.org

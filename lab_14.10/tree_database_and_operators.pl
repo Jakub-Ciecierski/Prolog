@@ -1,17 +1,4 @@
-/* The tree database 
-example from "prolog :- tutorial" by John R. Fisher,
-http://www.csupomona.edu/~jrfisher/www/prolog_tutorial/contents.html
-*/ 
-
-:- op(500,xfx,'is_parent_of'). 
-
-a is_parent_of b.
-c is_parent_of g.
-f is_parent_of l.
-j is_parent_of q. 
-a is_parent_of c.
-c is_parent_of h.
-f is_parent_of m.
+/* The tree database  
 j is_parent_of r. 
 a is_parent_of d.
 c is_parent_of i.
