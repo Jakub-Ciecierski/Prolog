@@ -1,3 +1,5 @@
+
+http://www.amzi.com/AdventureInProlog/aprolog.php
 ******************* PROLOG ******************* 
 ANDRZEJ MAZURKIEWICZ
 skype: andrzejmazurkiewicz0
