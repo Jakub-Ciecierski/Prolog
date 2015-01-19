@@ -1,7 +1,9 @@
 Useful tools for project:
 
 tuprolog  java + prolog
-knowrobhttp://www.amzi.com/AdventureInProlog/aprolog.php******************* PROLOG ******************* 
+knowrob
+http://www.amzi.com/AdventureInProlog/aprolog.php
+******************* PROLOG ******************* 
 ANDRZEJ MAZURKIEWICZ
 skype: andrzejmazurkiewicz0
 www.mazurkiewicz.org
