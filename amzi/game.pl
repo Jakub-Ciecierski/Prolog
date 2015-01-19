@@ -1,3 +1,5 @@
+# http://www.amzi.com/AdventureInProlog/a11lists.php
+
 :-dynamic here/1.
 :-dynamic have/1.
 :-dynamic location/2.
